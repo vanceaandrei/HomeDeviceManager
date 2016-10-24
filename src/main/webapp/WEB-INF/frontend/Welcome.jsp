@@ -32,7 +32,7 @@
 </head>
 <body>
 <div class="jumbotron noPadding noMargins">
-    <img class="backgroundImage" src="<c:url value="/resources/images/IoT.jpg"/>">
+    <img class="backgroundImage" src="<c:url value="/resources/images/background.jpg"/>">
     <nav class="navbar navbar-inverse navbar-fixed-top noMargins">
         <div class="container">
             <div class="navbar-header">
@@ -64,68 +64,14 @@
             </div>
         </div>
     </nav>
-
-    <div class="container-fluid noPadding topDiv">
-        <div class="row">
-            <div class="defaultDiv left col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Description
-                    </div>
-                    <div class="panel-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare nibh nulla, eu aliquet
-                        velit
-                        convallis nec. Curabitur tortor nunc, sollicitudin in tortor commodo, volutpat egestas odio.
-                        Praesent tempus leo molestie mauris tincidunt pretium. Donec luctus et nunc non aliquet.
-                        Pellentesque hendrerit mauris suscipit, congue est at, auctor dui. In nisl ante, lacinia et
-                        augue
-                        sit amet, ullamcorper gravida ipsum. Donec ac volutpat dui, ac blandit ante. Aliquam egestas,
-                        sem
-                        vel fermentum vehicula, libero ante facilisis ante, ut tempus nisi leo at mi. Donec est libero,
-                        posuere nec eros et, convallis tempor enim.
-                    </div>
-                </div>
-            </div>
-            <div class="defaultDiv right col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Description
-                    </div>
-                    <div class="panel-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare nibh nulla, eu aliquet
-                        velit
-                        convallis nec. Curabitur tortor nunc, sollicitudin in tortor commodo, volutpat egestas odio.
-                        Praesent tempus leo molestie mauris tincidunt pretium. Donec luctus et nunc non aliquet.
-                        Pellentesque hendrerit mauris suscipit, congue est at, auctor dui. In nisl ante, lacinia et
-                        augue
-                        sit amet, ullamcorper gravida ipsum. Donec ac volutpat dui, ac blandit ante. Aliquam egestas,
-                        sem
-                        vel fermentum vehicula, libero ante facilisis ante, ut tempus nisi leo at mi. Donec est libero,
-                        posuere nec eros et, convallis tempor enim.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="defaultDiv left right col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Description
-                    </div>
-                    <div class="panel-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare nibh nulla, eu aliquet
-                        velit
-                        convallis nec. Curabitur tortor nunc, sollicitudin in tortor commodo, volutpat egestas odio.
-                        Praesent tempus leo molestie mauris tincidunt pretium. Donec luctus et nunc non aliquet.
-                        Pellentesque hendrerit mauris suscipit, congue est at, auctor dui. In nisl ante, lacinia et
-                        augue
-                        sit amet, ullamcorper gravida ipsum. Donec ac volutpat dui, ac blandit ante. Aliquam egestas,
-                        sem
-                        vel fermentum vehicula, libero ante facilisis ante, ut tempus nisi leo at mi. Donec est libero,
-                        posuere nec eros et, convallis tempor enim.
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid noPadding">
+        <div class="descriptionBox topDiv">
+            <h1>Welcome to HomeDeviceManager console </h1>
+            <br>
+            <br><br>
+            <p>Here you will find a easy manager console to
+                manage your inner systems by registering them to the console. You can control all devices
+                and get information about devices on your LAN network.</p>
         </div>
     </div>
 </div>

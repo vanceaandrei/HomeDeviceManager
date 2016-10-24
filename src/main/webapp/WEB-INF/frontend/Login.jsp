@@ -21,7 +21,7 @@
 </head>
 <body>
 <div class="jumbotron noPadding noMargins">
-    <img class="backgroundImage" src="<c:url value="/resources/images/IoT.jpg"/>">
+    <img class="backgroundImage" src="<c:url value="/resources/images/background.jpg"/>">
     <nav class="navbar navbar-inverse navbar-fixed-top noMargins">
         <div class="container">
             <div class="navbar-header">
@@ -47,7 +47,7 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid noPadding">
+    <div class="container-fluid noPadding topDiv">
 
         <div class="container-fluid formDiv topDiv col-xs-3 col-sm-3 col-md-3 col-lg-3">
 
