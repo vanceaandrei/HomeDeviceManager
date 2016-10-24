@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="classpath:/db/db_config.xml"/>
+
+    <!-- ******************************************************************* -->
+    <!-- ********         Classic Jdbc template                   ********** -->
+    <!-- ******************************************************************* -->
+    <bean id="classicJdbcTemplate"
+          class="org.springframework.jdbc.core.JdbcTemplate"
+          scope="singleton">
+        <constructor-arg ref="dataSource" />
+    </bean>
+
+    <!-- ******************************************************************* -->
+    <!-- ********     Named Parameter Jdbc template               ********** -->
+    <!-- ******************************************************************* -->
+    <bean id="namedParameterJdbcTemplate"
+          class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"
+          scope="prototype">
+        <constructor-arg ref="classicJdbcTemplate" />
+    </bean>
+</beans>

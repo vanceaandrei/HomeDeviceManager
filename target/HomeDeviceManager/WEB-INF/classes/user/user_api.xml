@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="user_dao.xml" />
+
+    <!-- ********************************************************************************** -->
+    <!-- ********         Configuration for Runtime Properties Override file    *********** -->
+    <!-- ********************************************************************************** -->
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>db/common.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- ********************************************************************************** -->
+    <!-- ********  Reference Repository                                                      *** -->
+    <!-- ********************************************************************************** -->
+    <bean id="userRepository"
+          class="persistence.user.impl.UserRepository"
+          scope="prototype">
+        <property name="userDAO">
+            <ref bean="userDAO"/>
+        </property>
+    </bean>
+
+
+</beans>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- ************************************************************************* -->
+    <!-- ********      Import the Common configuration                 *********** -->
+    <!-- ************************************************************************* -->
+    <import resource="classpath:/db/common-config.xml"/>
+
+    <!-- ********************************************************************************** -->
+    <!-- ********         Configuration for the JDBCTemplate bean                ********** -->
+    <!-- ********************************************************************************** -->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg>
+            <ref bean="dataSource"/>
+        </constructor-arg>
+        <!-- <property name="exceptionTranslator" ref="customExceptionTranslator"/> -->
+    </bean>
+
+    <!-- ********************************************************************************** -->
+    <!-- ********  START OF CONFIGURATION : USER beans                   ********** -->
+    <!-- ********************************************************************************** -->
+
+    <!-- ********************************************************************************** -->
+    <!-- ***** DAO object for operations on the USER tables.                 ******* -->
+    <!-- ********************************************************************************** -->
+    <bean id="userDAO" class="persistence.user.dao.impl.UserDAO" scope="prototype">
+        <property name="dataSource">
+            <ref bean="dataSource"/>
+        </property>
+        <property name="loginUser">
+            <value>
+                SELECT username, password FROM USERS WHERE username=:USERNAME
+            </value>
+        </property>
+        <property name="registerUserQuery">
+            <value>
+                INSERT INTO
+                users (name, surname, email, username, password)
+                VALUES
+                (:USERNAME, :SURNAME, :EMAIL, :USERNAME, :PASSWORD)
+            </value>
+        </property>
+    </bean>
+
+</beans>
