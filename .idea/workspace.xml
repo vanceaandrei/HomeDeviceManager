@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ece3c9f-fce5-4ae6-8153-56d062af2e63" name="Default" comment="" />
+    <list default="true" id="7ece3c9f-fce5-4ae6-8153-56d062af2e63" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="HomeDeviceManager.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,7 +31,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="27" column="33" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="33" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,7 +76,16 @@
             <state relative-caret-position="204">
               <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#501#502#0" expanded="false" />
+                <element signature="e#549#550#0" expanded="false" />
+                <element signature="e#663#664#0" expanded="false" />
+                <element signature="e#718#719#0" expanded="false" />
+                <element signature="e#830#831#0" expanded="false" />
+                <element signature="e#880#881#0" expanded="false" />
+                <element signature="e#974#975#0" expanded="false" />
+                <element signature="e#1024#1025#0" expanded="false" />
+                <element signature="e#1136#1137#0" expanded="false" />
+                <element signature="e#1201#1202#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -81,8 +94,8 @@
       <file leaf-file-name="Welcome.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/frontend/Welcome.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+            <state relative-caret-position="238">
+              <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -142,6 +155,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -294,8 +310,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -921,6 +937,7 @@
       <workItem from="1476971619663" duration="2554000" />
       <workItem from="1477030396085" duration="10636000" />
       <workItem from="1477290980281" duration="3072000" />
+      <workItem from="1477295338046" duration="31000" />
     </task>
     <servers />
   </component>
@@ -957,7 +974,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277070000" />
+    <option name="totallyTimeSpent" value="277101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1385,7 +1402,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="27" column="33" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1404,7 +1423,16 @@
         <state relative-caret-position="204">
           <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#501#502#0" expanded="false" />
+            <element signature="e#549#550#0" expanded="false" />
+            <element signature="e#663#664#0" expanded="false" />
+            <element signature="e#718#719#0" expanded="false" />
+            <element signature="e#830#831#0" expanded="false" />
+            <element signature="e#880#881#0" expanded="false" />
+            <element signature="e#974#975#0" expanded="false" />
+            <element signature="e#1024#1025#0" expanded="false" />
+            <element signature="e#1136#1137#0" expanded="false" />
+            <element signature="e#1201#1202#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1435,8 +1463,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/frontend/Welcome.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+        <state relative-caret-position="238">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
           <folding />
         </state>
       </provider>
