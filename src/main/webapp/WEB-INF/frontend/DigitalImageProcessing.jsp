@@ -33,7 +33,7 @@
 </head>
 <body>
 <div class="jumbotron noPadding noMargins">
-    <img class="backgroundImage" src="<c:url value="/resources/images/IoT.jpg"/>">
+    <img class="backgroundImage" src="<c:url value="/resources/images/background.jpg"/>">
     <nav class="navbar navbar-inverse navbar-fixed-top noMargins">
         <div class="container">
             <div class="navbar-header">
@@ -67,7 +67,7 @@
     </nav>
 
     <div class="container-fluid noPadding topDiv">
-        <div class="row">
+        <div class="row topDiv">
             <div class="defaultDiv right col-xs-3 col-sm-3 col-md-3 col-lg-3" id="submitPictureDiv">
                 <form class="form-horizontal" id="uploadForm" method="POST" enctype="multipart/form-data">
                     <label class="control-label">Select File</label>

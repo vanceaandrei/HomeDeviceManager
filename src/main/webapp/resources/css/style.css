@@ -13,12 +13,21 @@
 .backgroundImage {
     position: absolute;
     width: 100%;
-    height: auto;
     pointer-events: none;
+}
+
+.banner {
+    height: 1024px;
 }
 
 .defaultDiv {
     padding: 3% 5%;
+    box-shadow: 3px 5px 10px 5px grey;
+}
+
+.defaultImageDiv {
+    max-width: 512px;
+    max-height: 512px;
     box-shadow: 3px 5px 10px 5px grey;
 }
 
@@ -40,7 +49,6 @@
 }
 
 .formDiv {
-    top: 15%;
     left: 13%;
     padding: 4% 6%;
     border-radius: 5%;
@@ -48,24 +56,27 @@
     animation-name: example;
     animation-duration: 0.5s;
     animation-timing-function: linear;
+    color: white;
 }
 
 .topDiv {
-    margin-top: 7%;
+    margin-top: 51px;
+}
+
+.defaultImage {
+    max-width: 512px;
+    max-height: 512px;
 }
 
 @keyframes example {
     0% {
         left: -30%;
-        top: 15%;
     }
     75% {
         left: 14%;
-        top: 15%;
     }
     100% {
         left: 13%;
-        top: 15%;
     }
 }
 
@@ -81,7 +92,7 @@
     padding: 10px;
     cursor: pointer;
     margin-top: 5%;
-    box-shadow: 5px 5px 2px grey;
+    box-shadow: 3px 4px 5px 1px grey;
 }
 
 .button:hover {
@@ -95,8 +106,15 @@
 }
 
 .descriptionBox {
-    max-width: 45%;
-    border-radius: 5em;
+    padding: 3% 5%;
+    min-height: 512px;
+    position: absolute;
+    text-align: center;
+    background-size: cover;
+    opacity: 50;
+    background-image: url("../../resources/images/welcomeImage.jpg");
+    font-size: medium;
+    color: white;
 }
 
 .pictureBox {
@@ -114,7 +132,7 @@
     height: 512px;
 }
 
-.row{
+.row {
     margin: 2% 0;
     padding: 0;
 }
