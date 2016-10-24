@@ -2,7 +2,124 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ece3c9f-fce5-4ae6-8153-56d062af2e63" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/Hello-servlet.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/com/hdm/controllers/AuthenticationController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/com/hdm/controllers/ProfileController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/com/hdm/controllers/modules/dip/DIPController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/com/hdm/controllers/views/ViewsController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/db/common-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/db/common.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/db/db_config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/models/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/models/dip/ColorSpace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/models/dip/DigitalImage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/models/dip/api/IColorSpace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/models/dip/api/IDigitalImage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/models/dip/operations/DIPOperations.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/models/dip/spaces/OriginalSpace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/models/dip/spaces/YCbCrSpace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/models/dip/spaces/YIQSpace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/persistence/user/UserFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/persistence/user/api/IUserRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/persistence/user/api/exceptions/BeanLoadException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/persistence/user/dao/api/IUserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/persistence/user/dao/impl/UserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/persistence/user/dao/impl/mapper/UserMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/persistence/user/impl/UserRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/user/user_api.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/user/user_dao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/util/Const.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/util/DIPConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/util/DIPUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/util/MathUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/classes/validation/LoginValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/frontend/DigitalImageProcessing.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/frontend/Login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/frontend/Profile.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/frontend/RegisterView.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/frontend/Welcome.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/commons-fileupload-1.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/commons-io-2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/guava-19.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/jackson-annotations-2.8.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/jackson-core-2.8.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/jackson-databind-2.8.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/json-20140107.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/mysql-connector-java-5.1.18.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/servlet-api-2.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/slf4j-api-1.7.21.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/spring-aop-4.3.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/spring-beans-4.3.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/spring-context-4.3.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/spring-core-4.3.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/spring-expression-4.3.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/spring-jdbc-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/spring-security-core-4.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/spring-tx-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/spring-web-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/spring-webmvc-4.2.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/tomcat-el-api-7.0.47.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/tomcat-jsp-api-7.0.47.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/lib/tomcat-servlet-api-7.0.47.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/images/IoT.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/images/image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/images/picture.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/images/picture2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/images/slider1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/images/sun.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/js/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/js/dip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/js/javascript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/js/jquery-3.1.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/js/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/js/profile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HomeDeviceManager/resources/js/register.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/hdm/controllers/AuthenticationController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/hdm/controllers/ProfileController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/hdm/controllers/modules/dip/DIPController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/hdm/controllers/views/ViewsController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/db/common-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/db/common.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/db/db_config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/dip/ColorSpace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/dip/DigitalImage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/dip/api/IColorSpace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/dip/api/IDigitalImage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/dip/operations/DIPOperations.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/dip/spaces/OriginalSpace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/dip/spaces/YCbCrSpace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/dip/spaces/YIQSpace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/persistence/user/UserFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/persistence/user/api/IUserRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/persistence/user/api/exceptions/BeanLoadException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/persistence/user/dao/api/IUserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/persistence/user/dao/impl/UserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/persistence/user/dao/impl/mapper/UserMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/persistence/user/impl/UserRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/user/user_api.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/user/user_dao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/util/Const.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/util/DIPConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/util/DIPUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/util/MathUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/validation/LoginValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-context.ContextLoadTestCase.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/context.ContextLoadTestCase.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/context/ContextLoadTestCase.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="HomeDeviceManager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,9 +148,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="27" column="33" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -41,7 +156,7 @@
       <file leaf-file-name="AuthenticationController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hdm/controllers/AuthenticationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
+            <state relative-caret-position="1207">
               <caret line="71" column="69" selection-start-line="71" selection-start-column="69" selection-end-line="71" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -75,18 +190,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
-              <folding>
-                <element signature="e#501#502#0" expanded="false" />
-                <element signature="e#549#550#0" expanded="false" />
-                <element signature="e#663#664#0" expanded="false" />
-                <element signature="e#718#719#0" expanded="false" />
-                <element signature="e#830#831#0" expanded="false" />
-                <element signature="e#880#881#0" expanded="false" />
-                <element signature="e#974#975#0" expanded="false" />
-                <element signature="e#1024#1025#0" expanded="false" />
-                <element signature="e#1136#1137#0" expanded="false" />
-                <element signature="e#1201#1202#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,7 +198,7 @@
       <file leaf-file-name="Welcome.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/frontend/Welcome.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="680">
               <caret line="40" column="66" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
               <folding />
             </state>
@@ -106,7 +210,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="34">
-                <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+                <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -173,7 +277,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/navbarAfterLogin.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/hdm/controllers/ResourcesController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/register.js" />
         <option value="$PROJECT_DIR$/target/HomeDeviceManager/resources/js/login.js" />
@@ -224,6 +327,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hdm/controllers/views/ViewsController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/frontend/Welcome.jsp" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -295,7 +399,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -316,8 +419,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -944,6 +1048,7 @@
       <workItem from="1477030396085" duration="10636000" />
       <workItem from="1477290980281" duration="3072000" />
       <workItem from="1477295338046" duration="1246000" />
+      <workItem from="1477297692768" duration="19000" />
     </task>
     <servers />
   </component>
@@ -980,7 +1085,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278316000" />
+    <option name="totallyTimeSpent" value="278335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1400,15 +1505,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="27" column="33" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hdm/controllers/AuthenticationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
+        <state relative-caret-position="1207">
           <caret line="71" column="69" selection-start-line="71" selection-start-column="69" selection-end-line="71" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1420,18 +1523,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
-          <folding>
-            <element signature="e#501#502#0" expanded="false" />
-            <element signature="e#549#550#0" expanded="false" />
-            <element signature="e#663#664#0" expanded="false" />
-            <element signature="e#718#719#0" expanded="false" />
-            <element signature="e#830#831#0" expanded="false" />
-            <element signature="e#880#881#0" expanded="false" />
-            <element signature="e#974#975#0" expanded="false" />
-            <element signature="e#1024#1025#0" expanded="false" />
-            <element signature="e#1136#1137#0" expanded="false" />
-            <element signature="e#1201#1202#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1461,7 +1553,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/frontend/Welcome.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="680">
           <caret line="40" column="66" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
           <folding />
         </state>
@@ -1471,7 +1563,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="34">
-            <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             <folding />
           </first_editor>
           <second_editor />
