@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="HomeDeviceManager:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="HomeDeviceManager.war">
-      <element id="artifact" artifact-name="HomeDeviceManager:war exploded" />
-    </root>
-  </artifact>
-</component>
