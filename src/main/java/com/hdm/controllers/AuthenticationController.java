@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import persistence.user.UserFactory;
 import util.Const;
+import util.FileUtil;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -23,7 +24,13 @@ import java.util.UUID;
 @RestController
 public class AuthenticationController {
 
-    //POST Methods
+    /**
+     *
+     * Login method
+     *
+     * @param rawUser Data received by submitting Login form.
+     * @return JSON String response
+     */
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public
     @ResponseBody
@@ -41,7 +48,7 @@ public class AuthenticationController {
                 if (decoder.matches(user.getPassword(), dbUser.getPassword())) {
                     response.put(Const.STATUS_CODE, Const.STATUS_OK);
                     response.put(Const.MESSAGE, Const.MESSAGE_LOGGED_IN);
-                    response.put(Const.USERNAME, user.getUsername());
+                    response.put(Const.EMAIL, user.getEmail());
 
                     String sessionId = UUID.randomUUID().toString();
                     response.put(Const.SESSION_COOKIE, sessionId);
@@ -64,10 +71,10 @@ public class AuthenticationController {
     }
 
     /**
-     * POST method for registering user
+     * POST method
      *
-     * @param rawUser
-     * @return
+     * @param rawUser Data received by submitting Register form.
+     * @return JSON String response
      */
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public
@@ -87,6 +94,10 @@ public class AuthenticationController {
                 UserFactory.getUserRepository().registerUser(user);
                 //generate SessionId
                 String sessionId = UUID.randomUUID().toString();
+
+                //crate a UserDirectory
+
+                FileUtil.createUserDirectory(user.getEmail());
 
                 response.put(Const.STATUS_CODE, Const.STATUS_OK);
                 response.put(Const.MESSAGE, Const.MESSAGE_REGISTERED);

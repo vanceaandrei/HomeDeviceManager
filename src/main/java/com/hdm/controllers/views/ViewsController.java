@@ -13,6 +13,14 @@ import org.springframework.web.servlet.ModelAndView;
 public class ViewsController {
 
     //GET Methods
+
+    //*** Welcome view ***
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public ModelAndView get() {
+        return new ModelAndView("Welcome");
+    }
+
+    //*** Auth views ***
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public ModelAndView getLoginPage() {
         return new ModelAndView("Login");
@@ -23,19 +31,18 @@ public class ViewsController {
         return new ModelAndView("RegisterView");
     }
 
+    //*** User settings views ***
     @RequestMapping(value = "/profile", method = RequestMethod.GET)
     public ModelAndView getProfileView() {
         return new ModelAndView("Profile");
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView get() {
-        return new ModelAndView("Welcome");
-    }
+    //*** HDM modules ***
 
-    @RequestMapping(value = "/modules/dip", method = RequestMethod.GET)
-    public ModelAndView getDIPView() {
-        return new ModelAndView("DigitalImageProcessing");
+    /* Devices */
+    @RequestMapping(value = "/devices", method = RequestMethod.GET)
+    public ModelAndView getDevicesView() {
+        return new ModelAndView("DevicesPage");
     }
 
 }

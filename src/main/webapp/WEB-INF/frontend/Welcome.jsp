@@ -66,12 +66,34 @@
     </nav>
     <div class="container-fluid noPadding">
         <div class="descriptionBox topDiv">
-            <h1>Welcome to HomeDeviceManager console </h1>
-            <br>
-            <br><br>
-            <p>Here you will find a easy manager console to
-                manage your inner systems by registering them to the console. You can control all devices
-                and get information about devices on your LAN network.</p>
+            <div>
+                <h1>Welcome to HomeDeviceManager console </h1>
+            </div>
+            <div>
+                <p>Here you will find a easy manager console to
+                    manage your inner systems by registering them to the console. You can control all devices
+                    and get information about them on your LAN network.</p>
+            </div>
+        </div>
+
+        <div class="descriptionBox welcome2Box">
+            <div class="row">
+                <a href="#">
+                    <div class="smallContentBox flex-container col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <div class="flex-item">Tutorials</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="smallContentBox flex-container col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <div class="flex-item">User Guide</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="smallContentBox flex-container col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <div class="flex-item">All about IOT </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>

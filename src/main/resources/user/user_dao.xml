@@ -31,7 +31,7 @@
         </property>
         <property name="loginUser">
             <value>
-                SELECT username, password FROM USERS WHERE username=:USERNAME
+                SELECT username, email, password FROM USERS WHERE username=:USERNAME
             </value>
         </property>
         <property name="registerUserQuery">

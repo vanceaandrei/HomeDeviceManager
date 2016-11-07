@@ -49,7 +49,7 @@
     </nav>
     <div class="container-fluid noPadding topDiv">
 
-        <div class="container-fluid formDiv topDiv col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <div class="formDiv topDiv col-xs-3 col-sm-3 col-md-3 col-lg-3">
 
             <form class="form-horizontal" id="loginForm" role="form">
 

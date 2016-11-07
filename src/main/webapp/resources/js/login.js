@@ -21,7 +21,7 @@ $(document).ready(function () {
                 if (data.status === "200") {
                     var json = JSON.parse(JSON.stringify(data));
                     setCookie("SessionId", json["SessionId"], 15);
-                    setCookie("Username", json["Username"], 15);
+                    setCookie("email", json["email"], 15);
                     $(location).prop("href", "./profile");
                 } else {
                     alert(data.message);

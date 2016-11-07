@@ -20,6 +20,11 @@ public class Const {
     public static final String MESSAGE = "message";
     public static final String USERNAME = "Username";
     public static final String FILE = "file";
+    public static final String EMAIL = "email";
+    public static final String PROFILE_PICTURE = "profile.jpg";
+    public static final String HDM_FILE_FOLDER = "HDMUserFiles";
+    public static final String MESSAGE_BAD_REQUEST = "Bad request";
+
 
     //messages
     public static final String MESSAGE_REGISTERED = "User successfully registered.";
@@ -30,5 +35,6 @@ public class Const {
     //status codes
     public static final String STATUS_OK = "200";
     public static final String STATUS_INVALID_CREDENTIALS = "420";
+    public static final String STATUS_BAD_REQUEST = "400";
 
 }
