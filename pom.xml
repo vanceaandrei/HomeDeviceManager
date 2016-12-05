@@ -10,6 +10,10 @@
     <version>1.0</version>
     <packaging>war</packaging>
 
+    <properties>
+        <tomcatWebappsPath>C:/tomcat8/apache-tomcat-8.0.35/webapps</tomcatWebappsPath>
+    </properties>
+
     <build>
         <finalName>HomeDeviceManager</finalName>
         <plugins>
@@ -17,6 +21,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
+                    <outputDirectory>${tomcatWebappsPath}</outputDirectory>
                     <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
                 </configuration>
             </plugin>

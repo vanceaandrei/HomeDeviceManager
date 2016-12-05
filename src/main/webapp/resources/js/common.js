@@ -29,12 +29,12 @@ function reddirectIfLoggedIn() {
 function logOut() {
     document.cookie = "Username=;";
     document.cookie = "SessionId=;";
+    redirectIfNotLoggedIn();
 }
 
 function userLoggedIn() {
-    var user = getCookie("Username");
     var session = getCookie("SessionId");
-    if (session != "" && session != null && user != "" && user != null) {
+    if (session != null && session != "") {
         //user is already logged in
         return true;
     } else {
@@ -42,8 +42,28 @@ function userLoggedIn() {
     }
 }
 
-function redirectIfNotLoggedIn(){
+function redirectIfNotLoggedIn() {
     if (!userLoggedIn()) {
         $(location).prop("href", "/HomeDeviceManager/login");
     }
 }
+
+var app = angular.module("myApp", []);
+var usercookie = getCookie("SessionId");
+app.controller("myCtrl", function ($scope) {
+    if (usercookie === "") {
+        $scope.href1 = "login";
+        $scope.href2 = "register";
+        $scope.button1 = "Login";
+        $scope.button2 = "Register";
+    } else {
+        $scope.href1 = "profile";
+        $scope.href2 = "";
+        $scope.logout = function () {
+            logOut();
+        };
+        $scope.button1 = "Profile";
+        $scope.button2 = "Logout";
+    }
+});
+

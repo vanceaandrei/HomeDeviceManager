@@ -21,7 +21,7 @@
 </head>
 <body>
 <div class="jumbotron noPadding noMargins">
-    <img class="backgroundImage" src="<c:url value="/resources/images/background.jpg"/>">
+    <img class="backgroundImage" src="resources/images/background.jpg"/>">
     <nav class="navbar navbar-inverse navbar-fixed-top noMargins">
         <div class="container">
             <div class="navbar-header">

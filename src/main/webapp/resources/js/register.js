@@ -41,10 +41,10 @@ $(document).ready(function () {
             data: JSON.stringify(request),
             contentType: "application/json",
             success: function (data) {
-                    var json = JSON.parse(JSON.stringify(data));
-                    setCookie("SessionId", json["SessionId"], 15);
-                    setCookie("Username", json["Username"], 15);
-                    $(location).prop("href", "./login");
+                var json = JSON.parse(JSON.stringify(data));
+                setCookie("SessionId", json["SessionId"], 15);
+                setCookie("email", json["email"], 15);
+                $(location).prop("href", "./login");
             },
             error: function (data) {
                 alert(JSON.stringify(data));

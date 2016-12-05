@@ -11,8 +11,9 @@
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
 
     <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/frontend/"/>
+        <property name="prefix" value="/WEB-INF/newFrontEnd/"/>
         <property name="suffix" value=".jsp"/>
+
     </bean>
 
     <mvc:resources mapping="/resources/**" location="/resources/"

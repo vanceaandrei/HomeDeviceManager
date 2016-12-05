@@ -42,6 +42,19 @@
                 (:USERNAME, :SURNAME, :EMAIL, :USERNAME, :PASSWORD)
             </value>
         </property>
+        <property name="deleteUserQuery">
+            <value>
+                DELETE FROM
+                users
+                WHERE
+                email=:EMAIL
+            </value>
+        </property>
+        <property name="userDevicesQuery">
+            <value>
+                SELECT d.name, d.description FROM DEVICES d, USERS u WHERE u.email=:EMAIL AND d.userid = u.id
+            </value>
+        </property>
     </bean>
 
 </beans>

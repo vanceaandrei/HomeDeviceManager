@@ -1,17 +1,17 @@
 package com.hdm.controllers;
 
+import models.Device;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.dao.DataAccessException;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
+import persistence.user.UserFactory;
 import util.Const;
-import util.FileUtil;
 
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import java.io.File;
-import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -25,61 +25,23 @@ public class ProfileController {
 
     private static final Logger logger = LoggerFactory.getLogger(ProfileController.class);
 
-    /**
-     * GetPicture method for showing the profile picture of user
-     *
-     * @param file    Profile picture of user
-     * @param request
-     * @return
-     */
-    @RequestMapping(consumes = {"*/*"}, method = RequestMethod.POST)
+    @RequestMapping(value = "/loadDevices", method = RequestMethod.POST)
     public
     @ResponseBody
-    Map<String, Object> getPicture(@RequestParam("file") MultipartFile file, HttpServletRequest request) {
+    Map<String, Object> loadDevices(@RequestBody String userEmail) {
+        Map<String, Object> response = new HashMap<>();
+        try {
+            List<Device> devices = UserFactory.getUserRepository().getUserDevices(userEmail);
+            JSONArray listToJson = new JSONArray(devices);
+            String d = listToJson.toString();
 
-        // TODO: 10/28/2016
-//        Map<String, Object> response = new HashMap<>();
-//
-//        Cookie[] cookies = request.getCookies();
-//        String userEmail = "";
-//
-//        for (Cookie cookie : cookies) {
-//            if (Const.EMAIL.equalsIgnoreCase(cookie.getName())) {
-//                userEmail = cookie.getValue();
-//                break;
-//            }
-//        }
-//
-//        if (!file.isEmpty()) {
-//            //save file in Users directory
-//            try {
-//                if (userEmail != null && userEmail.contains("@")) {
-//                    File dest = FileUtil.createFile(userEmail + File.separator + Const.PROFILE_PICTURE);
-//                    file.transferTo(dest);
-//                    response.put(Const.STATUS_CODE, Const.STATUS_OK);
-//                } else {
-//                    response.put(Const.STATUS_CODE, Const.STATUS_BAD_REQUEST);
-//                    response.put(Const.MESSAGE, Const.MESSAGE_BAD_REQUEST);
-//                    logger.debug("\"email\" cookie broken.");
-//                }
-//            } catch (IOException e) {
-//                response.put(Const.STATUS_CODE, Const.STATUS_BAD_REQUEST);
-//                response.put(Const.MESSAGE, Const.MESSAGE_BAD_REQUEST);
-//                logger.error("Error while trying to create file for saving profile picture");
-//                e.printStackTrace();
-//            }
-//        }
-//
-//        return response;
-        return null;
+            response.put(Const.STATUS_CODE, Const.STATUS_OK);
+            response.put(Const.DEVICES, d);
+            logger.debug("Request /HomeDeviceManager/profile/loadDevices", "success");
+        } catch (DataAccessException dae) {
+            response.put(Const.STATUS_CODE, Const.STATUS_SERVER_ERROR);
+            response.put(Const.MESSAGE, Const.SERVER_ERROR);
+        }
+        return response;
     }
-
-    @RequestMapping(value = "/getProfilePicture", method = RequestMethod.GET)
-    public void getProfilePicture(@RequestParam String email) {
-
-        FileUtil.getEncodedProfilePicture(email);
-
-    }
-
-
 }

@@ -58,6 +58,7 @@
                     </c:if>
                     <c:if test="${loggedIn == true}">
                         <li><a href="<c:url value="/profile" />"> Profile </a></li>
+                        <li><a href="<c:url value="/myDevices"/> ">My Devices</a></li>
                         <li><a href="<c:url value="/"/>" id="LogOutButton" onclick="logOut()">Log Out</a></li>
                     </c:if>
                 </ul>
@@ -90,7 +91,7 @@
                 </a>
                 <a href="#">
                     <div class="smallContentBox flex-container col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        <div class="flex-item">All about IOT </div>
+                        <div class="flex-item">All about IOT</div>
                     </div>
                 </a>
             </div>

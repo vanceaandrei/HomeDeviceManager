@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    //reddirectIfLoggedIn();
+    reddirectIfLoggedIn();
 
     var loginForm = $('#loginForm');
 

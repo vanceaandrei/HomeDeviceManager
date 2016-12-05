@@ -1,16 +1,17 @@
 package com.hdm.controllers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import exception.AuthValidationException;
 import models.User;
 import org.springframework.dao.DataAccessException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 import persistence.user.UserFactory;
 import util.Const;
 import util.FileUtil;
+import validation.AuthValidator;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -25,7 +26,6 @@ import java.util.UUID;
 public class AuthenticationController {
 
     /**
-     *
      * Login method
      *
      * @param rawUser Data received by submitting Login form.
@@ -48,7 +48,7 @@ public class AuthenticationController {
                 if (decoder.matches(user.getPassword(), dbUser.getPassword())) {
                     response.put(Const.STATUS_CODE, Const.STATUS_OK);
                     response.put(Const.MESSAGE, Const.MESSAGE_LOGGED_IN);
-                    response.put(Const.EMAIL, user.getEmail());
+                    response.put(Const.EMAIL, dbUser.getEmail());
 
                     String sessionId = UUID.randomUUID().toString();
                     response.put(Const.SESSION_COOKIE, sessionId);
@@ -90,21 +90,18 @@ public class AuthenticationController {
             user = mapper.readValue(rawUser, User.class);
             user.setPassword(encoder.encode(user.getPassword()));
             try {
+                AuthValidator.validateUserForRegister(user);
                 //save user into DB
                 UserFactory.getUserRepository().registerUser(user);
                 //generate SessionId
                 String sessionId = UUID.randomUUID().toString();
-
-                //crate a UserDirectory
-
-                FileUtil.createUserDirectory(user.getEmail());
 
                 response.put(Const.STATUS_CODE, Const.STATUS_OK);
                 response.put(Const.MESSAGE, Const.MESSAGE_REGISTERED);
                 response.put(Const.SESSION_COOKIE, sessionId);
                 response.put(Const.USERNAME, user.getUsername());
 
-            } catch (DataAccessException dae) {
+            } catch (DataAccessException | AuthValidationException dae) {
                 response.put(Const.STATUS_CODE, String.valueOf(HttpStatus.SERVICE_UNAVAILABLE.value()));
                 response.put(Const.MESSAGE, Const.SERVER_ERROR);
             }

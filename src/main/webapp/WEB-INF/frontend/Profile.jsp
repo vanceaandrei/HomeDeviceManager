@@ -67,39 +67,7 @@
     </nav>
 
     <div class="container-fluid topDiv">
-        <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <div class="defaultDiv imageDiv">
-                    <div id="imageDiv"
-                         style="width: 512px; height: 512px; ">
-                    </div>
-                </div>
-            </div>
-            <div class="list-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Settings
-                    </div>
-                    <div class="panel-body">
-                        <form class="form-horizontal" id="uploadForm" method="POST" enctype="multipart/form-data">
 
-                            <label class="btn btn-primary">Upload profile picture
-                                <input type="file" style="display:none;" class="file-loading" name="file" id="fileInput"
-                                       onchange="savePicture()">
-                            </label>
-                        </form>
-                        <a href="<c:url value="/modules/dip"/>" class="list-group-item">
-                            <h4 class="list-group-item-heading">Digital Image Processing</h4>
-                            <p class="list-group-item-text">Bla bla bla</p>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">Devices</h4>
-                            <p class="list-group-item-text">Registered Devices</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 </body>

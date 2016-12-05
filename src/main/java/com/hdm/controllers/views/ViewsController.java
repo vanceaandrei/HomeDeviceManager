@@ -17,7 +17,7 @@ public class ViewsController {
     //*** Welcome view ***
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView get() {
-        return new ModelAndView("Welcome");
+        return new ModelAndView("welcome");
     }
 
     //*** Auth views ***
@@ -40,9 +40,9 @@ public class ViewsController {
     //*** HDM modules ***
 
     /* Devices */
-    @RequestMapping(value = "/devices", method = RequestMethod.GET)
+    @RequestMapping(value = "/myDevices", method = RequestMethod.GET)
     public ModelAndView getDevicesView() {
-        return new ModelAndView("DevicesPage");
+        return new ModelAndView("Devices");
     }
 
 }

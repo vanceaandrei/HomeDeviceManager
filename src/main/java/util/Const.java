@@ -24,7 +24,9 @@ public class Const {
     public static final String PROFILE_PICTURE = "profile.jpg";
     public static final String HDM_FILE_FOLDER = "HDMUserFiles";
     public static final String MESSAGE_BAD_REQUEST = "Bad request";
-
+    public static final String DB_DEVICE_NAME = "name";
+    public static final String DB_DEVICE_DESC = "description";
+    public static final String DEVICES = "devices";
 
     //messages
     public static final String MESSAGE_REGISTERED = "User successfully registered.";
@@ -36,5 +38,7 @@ public class Const {
     public static final String STATUS_OK = "200";
     public static final String STATUS_INVALID_CREDENTIALS = "420";
     public static final String STATUS_BAD_REQUEST = "400";
+    public static final String STATUS_SERVER_ERROR = "405";
+
 
 }
